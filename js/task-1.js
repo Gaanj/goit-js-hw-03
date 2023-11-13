@@ -1,6 +1,6 @@
-let a = [];
+let splitMass = [];
 function slugify(title){
-    a = title.split(" ");
-    let b = a.join("-");
-    return b;
+    splitMass = title.split(" ");
+    let joinMass = a.join("-");
+    return joinMass;
 }

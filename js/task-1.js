@@ -1,7 +1,8 @@
-let splitMass = [];
 function slugify(title){
-    splitMass = title.split(" ");
-    let lowercaseMass = splitMass.map(word => word.toLowerCase());
-    let joinMass = lowercaseMass.join("-");
-    return joinMass;
+    let arrays = title.toLowerCase().replace(/\s/g, "-")
+    return  arrays;
 }
+console.log(slugify("Arrays for begginers"));
+console.log(slugify("English for developer"));
+console.log(slugify("Ten secrets of JavaScript"));
+console.log(slugify("How to become a JUNIOR developer in TWO WEEKS"));
